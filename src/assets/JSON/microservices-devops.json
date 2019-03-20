@@ -13,7 +13,7 @@
     "Title": "",
     "SubTitle": "Demo",
     "Text": "1",
-    "Image": "../../../assets/images/architecture/01.png",
+    "Image": "01.png",
     "Link": "https://oracle.github.io/learning-library/workshops/microservices-devops/",
     "Video": "",
     "Poster": ""
@@ -23,7 +23,7 @@
     "Title": "Creating",
     "SubTitle": "A Next Generation Buying Experience",
     "Text": "2",
-    "Image": "../../../assets/images/architecture/02.png",
+    "Image": "02.png",
     "Link": "",
     "Video": "",
     "Poster": ""
@@ -51,7 +51,7 @@
     "Title": "Lisa Jones",
     "SubTitle": "3",
     "Text": "This is the 3rd section",
-    "Image": "04.png",
+    "Image": "05.png",
     "Link": "",
     "Video": "",
     "Poster": ""

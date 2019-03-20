@@ -6,10 +6,13 @@ import { Carousel } from 'react-responsive-carousel';
 import style from './style.scss';
 
 import slide from '../../../assets/images/architecture/01.png';
-import arch1 from '../../../assets/images/architecture/02.png';
+// import arch1 from url('https://github.com/varunyn/react-Interactive-workshop/blob/master/src/assets/images/architecture/01.png');
 import { isNull } from 'util';
-
+import Img from 'react-image'
 const jsonFile1 = require('../../../assets/JSON/microservices-devops.json');
+
+
+
 
 export default class HomePage extends React.Component {
   constructor(props) {
@@ -70,10 +73,13 @@ export default class HomePage extends React.Component {
       sectionKey: sectionKey,
     });
   }
+  
+
 
   render() {
     console.log('KEY');
     console.log(this.state.key);
+    const images = require.context('../../../assets/images/architecture/', true);
     return (
       <div className={style.bodyHeight}>
         <div className={style.header}>
@@ -91,10 +97,17 @@ export default class HomePage extends React.Component {
           >
             {Object.keys(this.state.myMap).map(val => {
               {
+                {/* {require(`${this.state.myMap[val].images[i]}`)} */}
                 return this.state.myMap[val].keys.map((value, i) => {
+                  console.log("IMAGE URL")
+                  {/* console.log(this.state.myMap[val].images[i]) */}
+
+                  let image = images(`./${this.state.myMap[val].images[i]}`)
+                  console.log(image)
                   return (
                     <div className={style.body}>
-                      <img src={this.state.myMap[val].images[i]} className={style.imgCenter} />
+                      <img src= {image}  className={style.imgCenter} />
+                      
                       <p className="legend" key={i}>
                         {this.state.myMap[val].texts[i]}
                       </p>
@@ -103,7 +116,7 @@ export default class HomePage extends React.Component {
                 });
               }
             })}
-            })} } })}
+           
           </Carousel>
         </div>
       </div>

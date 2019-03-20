@@ -66,7 +66,13 @@ const rules = [
 
   {
     test: /\.(svg|png|jpg|gif|woff|woff2|otf|ttf|eot)$/,
-    loader: 'file-loader',
+    use: [{
+      loader: 'url-loader',
+      options: { 
+          limit: 8000, // Convert images < 8kb to base64 strings
+          name: 'images/[hash]-[name].[ext]'
+      } 
+  }]
   },
   {
     type: 'javascript/auto',
