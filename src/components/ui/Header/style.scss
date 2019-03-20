@@ -1,0 +1,70 @@
+
+// nav {
+//   display: grid;
+//   border: 2px dashed rgba(114, 186, 94, 0.35);
+//   justify-items: center;
+//   grid-template-columns: 5fr 90px 90px 90px 90px 5fr ;
+//   grid-template-rows: auto;
+//   background: rgba(114, 186, 94, 0.05);
+// }
+
+// @media screen and (max-width: 900px) {
+//   nav {
+//     grid-template-columns: 100%;
+//     grid-template-rows: auto;
+//     grid-gap: 1em;
+//  }
+// }  
+// .logo{
+//   text-align: left;
+// }
+// .item {
+//   width: 50%;
+//   height: 50%;
+//   background: rgba(255, 213, 70, 0.4);
+//   border: 2px dashed rgba(236, 198, 48, 0.5); 
+// }
+
+// .navLinks {
+//   font-family:  sans-serif;
+//   font-size: 1.2em;
+//   text-transform: uppercase;
+//   text-decoration: none;
+//   color: black;
+// }
+
+// .navLinks:hover {
+//   color: white;
+//   border-left: 1px solid white;
+//   border-right: 1px solid white;
+//   padding: 1em 1em;
+// }
+
+// #twist {
+//   color: blue;
+// }
+.container{
+  height: 33px;
+}
+
+.navImage{
+  // width: 100%;
+  height: 20px;
+  margin-bottom: auto;
+}
+
+.navbar{
+  height: 33px;
+  background-color: #E5EAED;
+  align-content: center;
+}
+
+.center{
+  display:inline-block;
+  align-content: center;
+}
+
+.navItem{
+  margin: 0 auto;
+}
+// style={{height : '33px', backgroundColor: '#E5EAED'}}
