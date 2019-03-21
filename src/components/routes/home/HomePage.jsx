@@ -1,26 +1,21 @@
-import React from 'react';
-import Header from 'components/ui/Header/Header';
+import React from "react";
+import Header from "components/ui/Header/Header";
 // import '../home/carousel.min.scss';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import { Carousel } from 'react-responsive-carousel';
-import style from './style.scss';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
+import style from "./style.scss";
 
-import slide from '../../../assets/images/architecture/01.png';
-// import arch1 from url('https://github.com/varunyn/react-Interactive-workshop/blob/master/src/assets/images/architecture/01.png');
-import { isNull } from 'util';
-import Img from 'react-image'
-const jsonFile1 = require('../../../assets/JSON/microservices-devops.json');
+import slide from "../../../assets/images/architecture/01.png";
 
-
-
+const jsonFile = require("../../../assets/JSON/microservices-devops.json");
 
 export default class HomePage extends React.Component {
   constructor(props) {
     super(props);
-    this.onSubtitleSelect = this.onSubtitleSelect.bind(this);
+    this.onSubtitleClick = this.onSubtitleClick.bind(this);
     this.state = {
-      myMap: [],
-      key: null,
+      parsedJson: [],
+      subSectionKey: null,
       sectionKey: null
     };
   }
@@ -28,63 +23,64 @@ export default class HomePage extends React.Component {
   componentDidMount() {
     // FETCHING THE DATA FROM THE JSON FILE
     var jsonData = [];
-    var myMap = {};
+    var parsedJson = {};
     var key = -1;
-    fetch(jsonFile1)
+    fetch(jsonFile)
       .then(data => data.json())
       .then(
         data => {
           jsonData = data.workshop_content.slice(0);
           jsonData.map(function(item, i) {
-            if (item.Section in myMap) {
-              myMap[item.Section].subTitles.push(item.SubTitle);
-              myMap[item.Section].texts.push(item.Text);
-              myMap[item.Section].images.push(item.Image);
+            if (item.Section in parsedJson) {
+              parsedJson[item.Section].subTitles.push(item.SubTitle);
+              parsedJson[item.Section].texts.push(item.Text);
+              parsedJson[item.Section].images.push(item.Image);
               key++;
-              myMap[item.Section].keys.push(key);
+              parsedJson[item.Section].keys.push(key);
             } else {
-              key++
+              key++;
               var internMap = {};
-              internMap['subTitles'] = [item.SubTitle];
-              internMap['texts'] = [item.Text];
-              internMap['images'] = [item.Image];
-              internMap['keys'] = [key];
-              myMap[item.Section] = internMap;
+              internMap["subTitles"] = [item.SubTitle];
+              internMap["texts"] = [item.Text];
+              internMap["images"] = [item.Image];
+              internMap["keys"] = [key];
+              parsedJson[item.Section] = internMap;
             }
           });
-          console.log('MY MAP');
-          console.log(myMap);
+          console.log("PARSED JSON");
+          console.log(parsedJson);
           this.setState({
-            myMap: myMap,
+            parsedJson: parsedJson
           });
         },
         error => {
           this.setState({
             isLoaded: true,
-            error,
+            error
           });
         }
       );
   }
 
-  onSubtitleSelect(sectionKey, index) {
+  onSubtitleClick(sectionKey, index) {
     this.setState({
-      key: index,
       sectionKey: sectionKey,
+      subSectionKey: index
     });
   }
-  
-
 
   render() {
-    console.log('KEY');
-    console.log(this.state.key);
-    const images = require.context('../../../assets/images/architecture/', true);
+    const images = require.context(
+      "../../../assets/images/architecture/",
+      true
+    );
     return (
       <div className={style.bodyHeight}>
-        <div className={style.header}>
-          <Header section={this.state.myMap} onSubtitleSelect={this.onSubtitleSelect} />
-        </div>
+        <Header
+          section={this.state.parsedJson}
+          onSubtitleClick={this.onSubtitleClick}
+        />
+
         <div className={style.carousel}>
           <Carousel
             showThumbs={false}
@@ -93,30 +89,25 @@ export default class HomePage extends React.Component {
             dynamicHeight={false}
             showStatus={false}
             useKeyboardArrows={true}
-            selectedItem={this.state.key}
+            selectedItem={this.state.subSectionKey}
           >
-            {Object.keys(this.state.myMap).map(val => {
+            {Object.keys(this.state.parsedJson).map(val => {
               {
-                {/* {require(`${this.state.myMap[val].images[i]}`)} */}
-                return this.state.myMap[val].keys.map((value, i) => {
-                  console.log("IMAGE URL")
-                  {/* console.log(this.state.myMap[val].images[i]) */}
-
-                  let image = images(`./${this.state.myMap[val].images[i]}`)
-                  console.log(image)
+                return this.state.parsedJson[val].keys.map((value, i) => {
+                  let image = images(
+                    `./${this.state.parsedJson[val].images[i]}`
+                  );
                   return (
                     <div className={style.body}>
-                      <img src= {image}  className={style.imgCenter} />
-                      
+                      <img src={image} className={style.imgCenter} />
                       <p className="legend" key={i}>
-                        {this.state.myMap[val].texts[i]}
+                        {this.state.parsedJson[val].texts[i]}
                       </p>
                     </div>
                   );
                 });
               }
             })}
-           
           </Carousel>
         </div>
       </div>
