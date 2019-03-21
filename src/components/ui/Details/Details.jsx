@@ -1,27 +1,16 @@
-import react from 'React';
-import { defaultCipherList } from 'constants';
+import React from "react";
+import style from "./detailStyle.scss";
+import { defaultCipherList } from "constants";
 
-class Details extends React.Component {
+export default class Details extends React.Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
     return (
-      <div>
-        <section className="fdb-block">
-          <div className="container">
-            <div className="row justify-content-center">
-              <div className="col col-md-8 text-center">
-                <p className="lead">
-                  Far far away, behind the word mountains, far from the countries Vokalia and
-                  Consonantia, there live the blind texts. Separated they live in{' '}
-                  <a href="#">Bookmarksgrove</a> right at the coast of the
-                  Semantics, a large language ocean.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+      <div className={style.showHide}>
+        <p>{this.props.text}</p>
       </div>
     );
   }
 }
-
-export default Details;

@@ -1,29 +1,36 @@
-.container{
-  height: 33px;
-}
+// .container{
+//   height: 33px;
+// }
 
-.navImage{
-  // width: 100%;
-  height: 20px;
-  margin-bottom: auto;
-}
+// .navImage{
+//   // width: 100%;
+//   height: 20px;
+//   margin-bottom: auto;
+// }
 
 .navbar{
-  height: 33px;
+  // height: 33px;
   background-color: #E5EAED;
-  align-content: center;
-  position: fixed;
+  // align-content: center;
+  position: absolute;
   top: 0;
   right: 0;
   left: 0;
   z-index: 1030;
 }
-
-.center{
-  display:inline-block;
-  align-content: center;
+.Toggler{
+ color: black
 }
+// .NavbarBrand{
+//   position: absolute;
+//   right: 0px;
+// }
 
-.navItem{
-  margin: 0 auto;
-}
+// .center{
+//   display:inline-block;
+//   align-content: center;
+// }
+
+// .navItem{
+//   margin: 0 auto;
+// }

@@ -11,8 +11,8 @@
   {
     "Section": "Intro",
     "Title": "",
-    "SubTitle": "Demo",
-    "Text": "1",
+    "SubTitle": "",
+    "Text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut ex nec eros tempor elementum eget non eros. Ut euismod metus in velit dignissim gravida. Quisque faucibus orci at leo accumsan, id ultrices felis porta. Nullam a elit quis velit iaculis molestie id id purus. Quisque eu felis eu libero accumsan rhoncus. Morbi vitae nisl ut nisl aliquet vehicula id quis urna. Etiam a maximus metus, non venenatis ex. Pellentesque porttitor massa quis lacus dapibus interdum. Proin pulvinar, lectus in ultricies ornare, nisl leo sagittis nisl, eu vulputate nulla est eu est. Nulla dignissim quis ante non tincidunt.",
     "Image": "01.png",
     "Link": "https://oracle.github.io/learning-library/workshops/microservices-devops/",
     "Video": "",
@@ -49,26 +49,6 @@
   {
     "Section": "Agile Development",
     "Title": "Lisa Jones",
-    "SubTitle": "3",
-    "Text": "This is the 3rd section",
-    "Image": "05.png",
-    "Link": "",
-    "Video": "",
-    "Poster": ""
-  },
-  {
-    "Section": "Development",
-    "Title": "Lisa Jones",
-    "SubTitle": "4",
-    "Text": "This is the 3rd section",
-    "Image": "05.png",
-    "Link": "",
-    "Video": "",
-    "Poster": ""
-  },
-  {
-    "Section": "Development",
-    "Title": "Lisa Jones",
     "SubTitle": "5",
     "Text": "This is the 3rd section",
     "Image": "05.png",
@@ -77,11 +57,31 @@
     "Poster": ""
   },
   {
-    "Section": "Agile",
+    "Section": "Development",
     "Title": "Lisa Jones",
     "SubTitle": "6",
     "Text": "This is the 3rd section",
-    "Image": "05.png",
+    "Image": "06.png",
+    "Link": "",
+    "Video": "",
+    "Poster": ""
+  },
+  {
+    "Section": "Development",
+    "Title": "Lisa Jones",
+    "SubTitle": "7",
+    "Text": "This is the 3rd section",
+    "Image": "07.png",
+    "Link": "",
+    "Video": "",
+    "Poster": ""
+  },
+  {
+    "Section": "Agile",
+    "Title": "Lisa Jones",
+    "SubTitle": "8",
+    "Text": "This is the 3rd section",
+    "Image": "08.png",
     "Link": "",
     "Video": "",
     "Poster": ""
