@@ -49,26 +49,6 @@
   {
     "Section": "Agile Development",
     "Title": "Lisa Jones",
-    "SubTitle": "3",
-    "Text": "This is the 3rd section",
-    "Image": "05.png",
-    "Link": "",
-    "Video": "",
-    "Poster": ""
-  },
-  {
-    "Section": "Development",
-    "Title": "Lisa Jones",
-    "SubTitle": "4",
-    "Text": "This is the 3rd section",
-    "Image": "05.png",
-    "Link": "",
-    "Video": "",
-    "Poster": ""
-  },
-  {
-    "Section": "Development",
-    "Title": "Lisa Jones",
     "SubTitle": "5",
     "Text": "This is the 3rd section",
     "Image": "05.png",
@@ -77,11 +57,31 @@
     "Poster": ""
   },
   {
-    "Section": "Agile",
+    "Section": "Development",
     "Title": "Lisa Jones",
     "SubTitle": "6",
     "Text": "This is the 3rd section",
-    "Image": "05.png",
+    "Image": "06.png",
+    "Link": "",
+    "Video": "",
+    "Poster": ""
+  },
+  {
+    "Section": "Development",
+    "Title": "Lisa Jones",
+    "SubTitle": "7",
+    "Text": "This is the 3rd section",
+    "Image": "07.png",
+    "Link": "",
+    "Video": "",
+    "Poster": ""
+  },
+  {
+    "Section": "Agile",
+    "Title": "Lisa Jones",
+    "SubTitle": "8",
+    "Text": "This is the 3rd section",
+    "Image": "08.png",
     "Link": "",
     "Video": "",
     "Poster": ""
