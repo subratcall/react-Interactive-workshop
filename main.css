@@ -10,16 +10,54 @@
  * Find more here – https://github.com/rtivital/material-design-colors
  */
 /* Mixins */
-._3zk86lF {
-  background-color: #E5EAED;
+._3POru9m {
+  width: 100%;
+  height: 100px;
+  bottom: 0px;
   position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030; }
+  background-color: #85c18e;
+  margin-bottom: 40px;
+  animation: _3LB0-5z 1s;
+  -webkit-animation: _3LB0-5z 1s; }
 
-.fIds6em {
-  color: black; }
+.uetaY7O {
+  width: 100%;
+  bottom: 0px;
+  position: absolute;
+  background-color: #85c18e;
+  animation: ZTG7GH3 1s;
+  -webkit-animation: ZTG7GH3 1s; }
+
+._1qEsXk0 {
+  width: 100%;
+  height: 40px;
+  bottom: 0px;
+  position: absolute;
+  background-color: #85c18e;
+  cursor: pointer; }
+
+@-webkit-keyframes _3LB0-5z {
+  from {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    height: 0; }
+  to {
+    display: block;
+    visibility: visible;
+    opacity: 1; } }
+
+@-webkit-keyframes ZTG7GH3 {
+  from {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    height: 100px; }
+  to {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    height: 0; } }
 @charset "UTF-8";
 /*
  * This file stores all global variables and mixins that can be accessed in every scss file
@@ -32,13 +70,16 @@
  * Find more here – https://github.com/rtivital/material-design-colors
  */
 /* Mixins */
-._3WWbVC2 {
-  width: 100%;
-  height: 100px;
-  bottom: 0px;
+._3zk86lF {
+  background-color: #E5EAED;
   position: absolute;
-  background-color: #85c18e;
-  margin-bottom: 40px; }
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030; }
+
+.fIds6em {
+  color: black; }
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -58,18 +99,16 @@
 /* Mixins */
 ._1LdDZC9 {
   background: url(/react-Interactive-workshop/images/7a3984e473eb2f1bfdbd917d104a5a2e-bg.jpg);
-  height: -webkit-fill-available !important; }
+  height: -webkit-fill-available !important;
+  background-size: cover; }
+
+._3xW9mu2 > ._2G5rdge > img {
+  margin: 0 auto;
+  display: block; }
 
 .Gks1IsW {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  margin: 0 auto;
+  display: block; }
 
 ._3KAGAaa {
   padding-top: 60px;
