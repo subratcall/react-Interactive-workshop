@@ -7,19 +7,16 @@ import { Carousel } from "react-responsive-carousel";
 import style from "./style.scss";
 
 import slide from "../../../assets/images/architecture/01.png";
-import { Collapse, Button, CardBody, Card } from "reactstrap";
 const jsonFile = require("../../../assets/JSON/microservices-devops.json");
 
 export default class HomePage extends React.Component {
   constructor(props) {
     super(props);
     this.onSubtitleClick = this.onSubtitleClick.bind(this);
-    this.detailClicked = this.detailClicked.bind(this);
     this.state = {
       parsedJson: [],
       subSectionKey: null,
-      sectionKey: null,
-      detailClick: false
+      sectionKey: null
     };
   }
 
@@ -74,19 +71,12 @@ export default class HomePage extends React.Component {
     });
   }
 
-  detailClicked() {
-    this.setState(state => ({
-      detailClick: !state.detailClick
-    }));
-    // console.log("CALLED");
-    // return <div className={style.displayDetail} />;
-  }
-
   render() {
     const images = require.context(
       "../../../assets/images/architecture/",
       true
     );
+    var subTitlesText = ""
     return (
       <div className={style.bodyHeight}>
         <Header
@@ -120,19 +110,10 @@ export default class HomePage extends React.Component {
                         </div>
                       </div>
                       <img src={image} className={style.imgCenter} />
-                      <p className="legend" key={i}>
+                      {/* <p className="legend" key={i}>
                         {this.state.parsedJson[val].texts[i]}
-                      </p>
-                      {/* <div
-                        className={style.detailButton}
-                        onClick={this.detailClicked}
-                      >
-                        {
-                        this.state.detailClick ? (
-                          <Details text={this.state.parsedJson[val].texts[i]} />
-                        ) : null}
-                        <p>Details</p>
-                      </div> */}
+                      </p> */}
+                          <Details text={this.state.parsedJson[val].texts[i]} />                        
                     </div>
                   );
                 });

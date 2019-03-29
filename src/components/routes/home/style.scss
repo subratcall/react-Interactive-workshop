@@ -1,16 +1,20 @@
 .body {
     background: url('../../../assets/images/bg.jpg');
     height: -webkit-fill-available !important;
+    background-size: cover;
 }
 
 .carousel>.slide>img {
-
+    margin: 0 auto;
+    display: block;
 }
 
 .imgCenter {
-display: flex;
-justify-content: center;
-align-items: center;
+// display: flex;
+// justify-content: center;
+// align-items: center;
+margin: 0 auto;
+display: block;
 }
 
 .details {
