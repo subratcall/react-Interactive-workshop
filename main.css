@@ -20,6 +20,66 @@
 
 .fIds6em {
   color: black; }
+@charset "UTF-8";
+/*
+ * This file stores all global variables and mixins that can be accessed in every scss file
+ * in this project. Do not put any css code here except for mixins and placelders as it is
+ * automatically attached to every scss file.
+ */
+/* Variables */
+/*
+ * Part pf Material Design color palette
+ * Find more here – https://github.com/rtivital/material-design-colors
+ */
+/* Mixins */
+._3POru9m {
+  width: 100%;
+  height: 100px;
+  bottom: 0px;
+  position: absolute;
+  background-color: #85c18e;
+  margin-bottom: 40px;
+  animation: _3LB0-5z 1s;
+  -webkit-animation: _3LB0-5z 1s; }
+
+.uetaY7O {
+  width: 100%;
+  bottom: 0px;
+  position: absolute;
+  background-color: #85c18e;
+  animation: ZTG7GH3 1s;
+  -webkit-animation: ZTG7GH3 1s; }
+
+._1qEsXk0 {
+  width: 100%;
+  height: 40px;
+  bottom: 0px;
+  position: absolute;
+  background-color: #85c18e;
+  cursor: pointer; }
+
+@-webkit-keyframes _3LB0-5z {
+  from {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    height: 0; }
+  to {
+    display: block;
+    visibility: visible;
+    opacity: 1; } }
+
+@-webkit-keyframes ZTG7GH3 {
+  from {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    height: 100px; }
+  to {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    height: 0; } }
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -301,66 +361,6 @@
 .carousel:hover .slide .legend {
     opacity: 1
 }@charset "UTF-8";
-/*
- * This file stores all global variables and mixins that can be accessed in every scss file
- * in this project. Do not put any css code here except for mixins and placelders as it is
- * automatically attached to every scss file.
- */
-/* Variables */
-/*
- * Part pf Material Design color palette
- * Find more here – https://github.com/rtivital/material-design-colors
- */
-/* Mixins */
-._3POru9m {
-  width: 100%;
-  height: 100px;
-  bottom: 0px;
-  position: absolute;
-  background-color: #85c18e;
-  margin-bottom: 40px;
-  animation: _3LB0-5z 1s;
-  -webkit-animation: _3LB0-5z 1s; }
-
-.uetaY7O {
-  width: 100%;
-  bottom: 0px;
-  position: absolute;
-  background-color: #85c18e;
-  animation: ZTG7GH3 1s;
-  -webkit-animation: ZTG7GH3 1s; }
-
-._1qEsXk0 {
-  width: 100%;
-  height: 40px;
-  bottom: 0px;
-  position: absolute;
-  background-color: #85c18e;
-  cursor: pointer; }
-
-@-webkit-keyframes _3LB0-5z {
-  from {
-    display: none;
-    visibility: hidden;
-    opacity: 0;
-    height: 0; }
-  to {
-    display: block;
-    visibility: visible;
-    opacity: 1; } }
-
-@-webkit-keyframes ZTG7GH3 {
-  from {
-    display: block;
-    visibility: visible;
-    opacity: 1;
-    height: 100px; }
-  to {
-    display: none;
-    visibility: hidden;
-    opacity: 0;
-    height: 0; } }
-@charset "UTF-8";
 /*
  * This file stores all global variables and mixins that can be accessed in every scss file
  * in this project. Do not put any css code here except for mixins and placelders as it is
