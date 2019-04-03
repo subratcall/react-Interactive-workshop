@@ -1,0 +1,150 @@
+{
+  "title": "On-premises webLogic to OKE",
+  "background_color": "#2e2e2e",
+  "background_image": "https://isdportal.oracle.com/pls/portal/tsr_admin.isd_portlets4.download_repo?p_id=REPO_f1251210000_O398327958",
+  "nav_bg_color": "",
+  "nav_font_on_color": "#000",
+  "nav_font_off_color": "#5F5F5F",
+  "howitworks": "https://isdportal.oracle.com/pls/portal/tsr_admin.isd_portlets4.download_repo?p_id=REPO_f1201575081_D393710536",
+  "workshop_content": [{
+      "Section": "Intro",
+      "Title": "",
+      "SubTitle": "",
+      "Text": "Welcome to the On-premises WebLogic to OKE hands on lab. This workshop will walk you through the process of moving an existing On-premises WebLogic application into to a Kubernetes cluster in the Oracle Public Cloud.",
+      "Image": "01.png",
+      "Link": "",
+      "Video": "",
+      "Poster": ""
+    },
+    {
+      "Section": "Our Challenge",
+      "Title": "Meet Chip",
+      "SubTitle": "DevOps Challenges",
+      "Text": " As Alpha Offices lead DevOps Engineer, Chip lives in a world of constant change. It seems like every day new bugs appear, application enhancement requests emerge, all at the same time the CTO pressures him for speed up development cycles and decrease time to go-live.",
+      "Image": "02.png",
+      "Link": "",
+      "Video": "",
+      "Poster": ""
+    },
+    {
+      "Section": "Our Challenge",
+      "Title": "Meet Richard",
+      "SubTitle": "Infrastructure Challenges",
+      "Text": " At the same time, Richard, Alpha Offices Infrastructure engineer, often feels pressure to get environments built quickly, while having to meet requirements from security and budget. Not to mention, the on-going efforts of patching, upgrading and refreshing production resources which can be both difficult and time-consuming",
+      "Image": "03.png",
+      "Link": "",
+      "Video": "",
+      "Poster": ""
+    },
+    {
+      "Section": "Strategy",
+      "Title": "Strategy",
+      "SubTitle": "5 Years Ago",
+      "Text": " Five years ago, when Alpha Office standardized all Java deployments on WebLogic, the simple legacy paradigm of build and deploy worked great. As new requirements arrived, hardware quickly became oversubscribed, performance suffered and capital budget for new hardware was in short supply. A more flexible and manageable infrastructure was needed to handle changes over time.",
+      "Image": "04.png",
+      "Link": "",
+      "Video": "",
+      "Poster": ""
+    },
+    {
+      "Section": "Strategy",
+      "Title": "New IT Strategy",
+      "SubTitle": "“Cloud First” Strategy",
+      "Text": " Alpha Office’s CTO, is implementing a new IT strategy – Cloud First.  By using cloud resources as the “first choice” for all applications, he hopes to reduce costs, speed up development cycles and decrease time to go-live.",
+      "Image": "05.png",
+      "Link": "",
+      "Video": "",
+      "Poster": ""
+    },
+    {
+      "Section": "Strategy",
+      "Title": "New Project:",
+      "SubTitle": "Move On premise WebLogic to Cloud",
+      "Text": "Currently Alpha-Office leverages Java and WebLogic extensively on-premise. Last week, Vanu asked Chip and Richard to take the company’s product catalog application and evaluate available options for migrating the application to the cloud.",
+      "Image": "06.png",
+      "Link": "",
+      "Video": "",
+      "Poster": ""
+    },
+    {
+      "Section": "Architectural Overview",
+      "Title": "",
+      "SubTitle": "",
+      "Text": "Over the next few hours you will be assuming the roles of Chip and Richard as they execute this project from start to finish.",
+      "Image": "07.png",
+      "Link": "",
+      "Video": "",
+      "Poster": ""
+    },
+    {
+      "Section": "Architectural Overview",
+      "Title": "Product Catalog",
+      "SubTitle": "Development Architecture",
+      "Text": " Alpha Office’s product catalog has been developed using common J2EE constructs like JSPs, Servlets, and WebApps (war files) deployed on WebLogic.",
+      "Image": "08.png",
+      "Link": "",
+      "Video": "",
+      "Poster": ""
+    },
+    {
+      "Section": "Architectural Overview",
+      "Title": "Alpha Office",
+      "SubTitle": "DevOps Needs",
+      "Text": " At first glance the request seemed relatively simple, but shortly thereafter Chip and Richard realized that their respective teams of Developers and IT infrastructure professionals have different sets of requirements.",
+      "Image": "09.png",
+      "Link": "",
+      "Video": "",
+      "Poster": ""
+    },
+    {
+      "Section": "Architectural Overview",
+      "Title": "Future",
+      "SubTitle": "Cloud Architecture",
+      "Text": "Richard has two microservices: a product catalog as well as a twitter feed which pulls tweets about products in the catalog. He would like to deploy them into a single WebLogic container where he can easily deploy his polyglot application on oracle cloud infrastructure and maintain its state with oracle kubernetes engine.",
+      "Image": "10.png",
+      "Link": "",
+      "Video": "",
+      "Poster": ""
+    },
+    {
+      "Section": "Labs",
+      "Title": "Hands On Lab Overview",
+      "SubTitle": "",
+      "Text": "Over the next few hours you will be assuming the role of Chip and Richard as they execute the project from start to finish.",
+      "Image": "11.png",
+      "Link": "",
+      "Video": "",
+      "Poster": ""
+    },
+    {
+      "Section": "Labs",
+      "Title": "Pull WebLogic Image and push to OCIR",
+      "SubTitle": "Lab 100",
+      "Text": "In Lab 100, you will assume the role of Chip pull and push WebLogic Docker Image to Oracle Cloud Infrastructure Registry (OCIR).",
+      "Image": "12.png",
+      "Link": "",
+      "Video": "",
+      "Poster": ""
+    },
+    {
+      "Section": "Labs",
+      "Title": "Create Oracle Container Engine for Kubernetes (OKE) on OCI",
+      "SubTitle": "Lab 200",
+      "Text": " In Lab 200, you will assume the role of Richard and create a Kubernetes cluster using Oracle’s managed Kubernetes cloud service, called OKE.",
+      "Image": "13.png",
+      "Link": "",
+      "Video": "",
+      "Poster": ""
+    },
+    {
+      "Section": "Labs",
+      "Title": "Prepare the WebLogic Kubernetes Operator Environment",
+      "SubTitle": "Lab 300",
+      "Text": "In Lab 300, you will assume the persona of Richard and extend your application using a WebLogic Kubernetes Operator. You will clone operator on your local machine and deploy it on Kubernetes, making use of HELM. HELM is a package manager designed for Kubernetes that makes it easy to install open source software on your cluster. Next you will create and deploy your application to the Cloud and test it in the product catalog application.",
+      "Image": "14.png",
+      "Link": "",
+      "Video": "",
+      "Poster": ""
+    }
+  ]
+}

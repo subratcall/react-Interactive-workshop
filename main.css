@@ -375,8 +375,8 @@ ul._1SYQ9fo._10CbZax._4G205Zp {
  */
 /* Mixins */
 ._1LdDZC9 {
-  background: url(/react-Interactive-workshop/images/7a3984e473eb2f1bfdbd917d104a5a2e-bg.jpg);
-  height: -webkit-fill-available !important; }
+  background: url(/react-Interactive-workshop/images/28f91e540461406e4f9181a7b4d70381-bg-1.jpg);
+  height: 100vh; }
 
 .Gks1IsW {
   margin: 0;
@@ -385,6 +385,9 @@ ul._1SYQ9fo._10CbZax._4G205Zp {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
+
+._3xW9mu2 {
+  height: 100vh; }
 
 ._3KAGAaa {
   padding-top: 60px;
