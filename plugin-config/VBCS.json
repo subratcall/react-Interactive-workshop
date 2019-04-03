@@ -1,0 +1,200 @@
+{
+  "title": "Visual Builder Cloud Service",
+  "background_color": "#00729E",
+  "background_image": "https://isdportal.oracle.com/pls/portal/tsr_admin.isd_portlets4.download_repo?p_id=REPO_f1233201588_A397345892",
+  "nav_bg_color": "",
+  "nav_font_on_color": "#000",
+  "nav_font_off_color": "#045E8C",
+  "howitworks": "https://isdportal.oracle.com/pls/portal/tsr_admin.isd_portlets4.download_repo?p_id=REPO_f1201575081_D393710536",
+  "workshop_content": [{
+      "Section": "Intro",
+      "Title": "",
+      "SubTitle": "",
+      "Text": "Welcome to the Visual Builder Cloud hands on lab. In this lab, we will assume the role of a fictitious company Sour Grapes Winery and create and move their application to the cloud.",
+      "Image": "01.png",
+      "Link": "https://oracle.github.io/learning-library/workshops/vbcs/",
+      "Video": "",
+      "Poster": ""
+    },
+    {
+      "Section": "Our Challenge",
+      "Title": "Meet Sam",
+      "SubTitle": "Business Challenges",
+      "Text": " For Sam, Inventory manager at the winery, it’s his job to maintain the inventory data and ensure inventory levels are monitored in real time. It has been challenging for him to keep the inventory data continuously updated.",
+      "Image": "02.png",
+      "Link": "",
+      "Video": "",
+      "Poster": ""
+    },
+    {
+      "Section": "Our Challenge",
+      "Title": "Meet Jason",
+      "SubTitle": "Development  Challenges",
+      "Text": " On the other hand, for Jason, developer at the winery it’s been really difficult to keep up with multiple technologies across web and mobile platforms. It’s been time consuming and lot of effort to add new features while keeping the application live.",
+      "Image": "03.png",
+      "Link": "",
+      "Video": "",
+      "Poster": ""
+    },
+    {
+      "Section": "Our Challenge",
+      "Title": "Sour Grapes Winery",
+      "SubTitle": "Challenges and Needs",
+      "Text": " Three years ago, when the winery decided to create their applications on native platforms, that strategy worked very well while they had few updates and changes to make. As new technologies emerged it became hard to maintain all the application on various platforms. A unified and simple platform was needed to maintain and deploy the applications",
+      "Image": "04.png",
+      "Link": "",
+      "Video": "",
+      "Poster": ""
+    },
+    {
+      "Section": "Architectural Overview",
+      "Title": "",
+      "SubTitle": "",
+      "Text": "",
+      "Image": "05.png",
+      "Link": "",
+      "Video": "",
+      "Poster": ""
+    },
+    {
+      "Section": "Architectural Overview",
+      "Title": "Sour Grapes Winery",
+      "SubTitle": "New Architecture proposal",
+      "Text": "With�the move to cloud, they are looking forward to having a simple platform to create the application for both web and mobile.",
+      "Image": "06.png",
+      "Link": "",
+      "Video": "",
+      "Poster": ""
+    },
+    {
+      "Section": "Architectural Overview",
+      "Title": "Sour Grapes Winery",
+      "SubTitle": "Current Architecture",
+      "Text": "Currently, Sour Grapes Winery uses native mobile applications, web applications, and an on premise database. The architecture includes a server for the mobile application, a server for the web application, and a server for the database all manually managed by Jason the Sour Grapes developer.",
+      "Image": "07.png",
+      "Link": "",
+      "Video": "",
+      "Poster": ""
+    },
+    {
+      "Section": "Architectural Overview",
+      "Title": "Sour Grapes Winery",
+      "SubTitle": "Current Workflow",
+      "Text": "The current work flow for the current process is long and multi stage. It involves formatting the inventory data, sending it to the developer to update in the database, and waiting for the update. This causes field sales agents to occasionally make sales decisions on stale inventory data. This is currently costing Sam hours to correct inventory data. It costs field sales reps hours of time in correcting orders and repairing customer relationships when these errors affect them.",
+      "Image": "08.png",
+      "Link": "",
+      "Video": "",
+      "Poster": ""
+    },
+    {
+      "Section": "Architectural Overview",
+      "Title": "Sour Grapes Winery",
+      "SubTitle": "Moving to Cloud",
+      "Text": "Moving to cloud will allow Sam to maintain the inventory data directly himself and allow field sales agents to always have access to the current inventory data.",
+      "Image": "09.png",
+      "Link": "",
+      "Video": "",
+      "Poster": ""
+    },
+    {
+      "Section": "Architectural Overview",
+      "Title": "Sour Grapes Winery",
+      "SubTitle": "Current Architecture",
+      "Text": "",
+      "Image": "10.png",
+      "Link": "",
+      "Video": "",
+      "Poster": ""
+    },
+    {
+      "Section": "Architectural Overview",
+      "Title": "Functional Enhancement",
+      "SubTitle": "Future Architecture",
+      "Text": "Today for the first time ever Sour Grapes winery are leveraging the Cloud to look for the solution where they can have quick updates and reliable service. Jason and Sam are looking at Autonomous Visual Builder Cloud where Jason can build and maintain the multiple applications in the same platform and Sam can update the inventory data in the database quickly with real-time sync.",
+      "Image": "11.png",
+      "Link": "",
+      "Video": "",
+      "Poster": ""
+    },
+    {
+      "Section": "Architectural Overview",
+      "Title": "Future Architecture",
+      "SubTitle": "Visual Builder Cloud Service",
+      "Text": "Visual Builder Cloud Service is a cloud service that enables you to rapidly create and host web and mobile applications with minimal coding required. Users can visually create an application using a collection of built-in user-interface controls, and bind the UI to existing REST services or custom business objects they create from within the tool.",
+      "Image": "12.png",
+      "Link": "",
+      "Video": "",
+      "Poster": ""
+    },
+    {
+      "Section": "Labs",
+      "Title": "Sour Grapes Winery",
+      "SubTitle": "",
+      "Text": "Our  goal over the next 3 hours will be to assume the roles of Sam and Jason and follow their journey as they create the web and mobile applications leveraging the Oracle Visual Builder Cloud Service and incorporating the REST data to show the data feed and perform operations on the data.",
+      "Image": "13.png",
+      "Link": "https://oracle.github.io/learning-library/workshops/vbcs/",
+      "Video": "",
+      "Poster": ""
+    },
+    {
+      "Section": "Labs",
+      "Title": "Provision Visual Builder in Oracle Cloud",
+      "SubTitle": "Lab 050",
+      "Text": "In Lab 050, Sam will provision Visual Builder Cloud in Oracle Cloud Instance",
+      "Image": "14.png",
+      "Link": "",
+      "Video": "",
+      "Poster": ""
+    },
+    {
+      "Section": "Labs",
+      "Title": "Creating a Visual Builder Application and Displaying Business Data ",
+      "SubTitle": "Lab 100",
+      "Text": "In Lab 100, you will assume the role of Sam and provision a Visual Builder instance in Oracle Cloud, create an application and add business data to display.",
+      "Image": "15.png",
+      "Link": "",
+      "Video": "",
+      "Poster": ""
+    },
+    {
+      "Section": "Labs",
+      "Title": "Adding Update and Edit Pages to the Web Application",
+      "SubTitle": "Lab 200",
+      "Text": "In Lab 200, you will assume the role of Jason , and add pages to your application for adding data and editing data.",
+      "Image": "16.png",
+      "Link": "",
+      "Video": "",
+      "Poster": ""
+    },
+    {
+      "Section": "Labs",
+      "Title": "Creating a Mobile Application",
+      "SubTitle": "Lab 300",
+      "Text": "In Lab 300, you will assume the role of Sam, and you will create a mobile application which will be displaying an inventory list.",
+      "Image": "17.png",
+      "Link": "",
+      "Video": "",
+      "Poster": ""
+    },
+    {
+      "Section": "Labs",
+      "Title": "Incorporating REST Data into the Application",
+      "SubTitle": "Lab 400",
+      "Text": "In Lab 400, you will assume the role Jason, and you will create a mobile application page for viewing an inventory item's details and also incorporating REST service data into the mobile application.",
+      "Image": "18.png",
+      "Link": "",
+      "Video": "",
+      "Poster": ""
+    },
+    {
+      "Section": "Contact Us",
+      "Title": "Contact Us",
+      "SubTitle": "",
+      "Text": "As you go through this material if you have any questions please feel free to reach out to a member of our Developer Innovation team.",
+      "Image": "19.png",
+      "Link": "",
+      "Video": "",
+      "Poster": ""
+    }
+  ]
+}
